@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://tinyurl.com/ygcevwc7" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Simple Calculator</title>
+</head>
+<body style="background-color:bisque;">
+    <div class="container">
+        
+        <table class="table table-bordered">
+           <tr style="background:linear-gradient(to bottom,white,gray,white);"><td colspan="4"><h1>Calculator</h1></td></tr> 
+            <tr class="bgcol">
+                <td colspan="3"><input class="screen" type="text" id="scr"  placeholder="Enter expression"></td>
+                <td><input class="digbtn" type="button" value="AC" onclick="clrscr()"></td>
+            </tr>
+
+            <tr class="bgcol">
+                <td> <input class="digbtn" type="button" value="7" onclick="display('7')"></td>
+                <td> <input class="digbtn" type="button" value="8" onclick="display('8')"></td>
+                <td> <input class="digbtn" type="button" value="9" onclick="display('9')"></td>
+                <td> <input class="digbtn" type="button" value="/" onclick="display('/')"></td>
+            </tr>
+
+            <tr class="bgcol">
+                <td> <input class="digbtn" type="button" value="6" onclick="display('6')"></td>
+                <td> <input class="digbtn" type="button" value="5" onclick="display('5')"></td>
+                <td> <input class="digbtn" type="button" value="4" onclick="display('4')"></td>
+                <td> <input class="digbtn" type="button" value="*" onclick="display('*')"></td>
+            </tr>
+
+            <tr class="bgcol">
+                <td><input class="digbtn" type="button" value="3" onclick="display('3')"></td>
+                <td><input class="digbtn" type="button" value="2" onclick="display('2')"></td>
+                <td><input class="digbtn" type="button" value="1" onclick="display('1')"></td>
+                <td><input class="digbtn" type="button" value="-" onclick="display('-')"></td>
+            </tr>
+
+            <tr class="bgcol">
+                <td> <input class="digbtn" type="button" value="0" onclick="display('0')"></td>
+                <td> <input class="digbtn" type="button" value="." onclick="display('.')"></td>
+                <td> <input class="digbtn" type="button" value="=" onclick="calculate()"></td>
+                <td> <input class="digbtn" type="button" value="+" onclick="display('+')"></td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <footer>
+        <p>@copyright 2023 by Harshal Borkar</p>
+    </footer>
+</body>
+</html>
