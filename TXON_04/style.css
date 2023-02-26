@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1A1A1A;
+}
+#background-video {
+    max-width: fit-content;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+#section1{
+    max-height: 100vh;
+}
+
+h2{
+    font-family:Creepster;
+    letter-spacing: 2px;
+    font-weight: 50;
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+h5{
+    font-family: Lobster Two;
+    padding: 5px;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    font-size: large;
+}
+hr{
+    margin-top: 3%;
+    margin-bottom: 15px;
+    height: 2px;
+}
+h6{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+/*Header*/
+.nav-head{
+    background-color: blueviolet;
+    max-height: 15%;
+    opacity: 0.7;
+}
+.logo{
+    position: relative;
+    left: 5%;
+    border: 2px solid gold;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 10;
+    fill-opacity: 10px;
+    filter: contrast(200);
+    animation: rotate 2s infinite alternate linear;
+}
+
+@keyframes rotate {
+    from{
+        filter: hue-rotate(100deg);
+    }
+    to{
+        filter: hue-rotate(200deg);
+    }
+}
+.navlink{
+    text-decoration: none;
+    list-style: none;
+    font-family: Courgette;
+    font-size: x-large;
+    font-weight: 500;
+    color: black;
+    padding-bottom: px;
+    animation: change 2s infinite alternate linear forwards;
+}
+
+.navlink:hover{
+    color: #ebff0a;
+    border-bottom: 4px double rgb(0, 0, 0);
+}
+
+
+
+
+.div-list{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    right: 10%;
+}
+.list-ul{
+    display: flex;
+    justify-content: end;
+}
+.list-li{
+    display: inline-flex;
+    padding-right: 30px;
+    font-size: large;
+}
+/*Header*/
+
+
+/*Name*/
+.name{
+    /*background-color: rgb(142, 236, 205);*/
+    min-height: 100vh;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    text-align: center;
+    word-spacing: 2px;     
+}
+
+h1.name-text1{
+    padding: 10px;
+    font-size: 50px;
+    font-family: Great Vibes;
+    letter-spacing: 2px;
+    color: #1A1A1A;
+    color: whitesmoke;
+}
+h1.name-text2{
+    font-size: 50px;
+    font-family: Great Vibes;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    color: #1A1A1A; 
+    color: whitesmoke;
+}
+h6.name-text3{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: Tangerine;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #1A1A1A; 
+    color: whitesmoke;
+}
+.name-text4{
+    position: absolute;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: Tangerine;
+    letter-spacing: 1px;
+    word-spacing: 5px; 
+    color: whitesmoke;
+    left: 30%;
+}
+
+.wave{
+    max-width: fit-content;
+    position: absolute;
+    top:85vh;
+    left: 46.5%;
+    animation: shake 2s infinite alternate linear;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    20%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    
+    60%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(20deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.dwn-btn{
+    position: absolute;
+    top: 100vh;
+    margin-left: 45%;
+}
+
+.download{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: large;
+    padding: 8px;
+    border-radius: 50px;
+
+}
+/*Name*/
+
+
+/* About*/
+.abt{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    min-height: 100vh;
+    max-height: max-content;
+    font-family: Dancing Script;
+    
+}
+
+
+
+.abt-text1{
+    position:absolute;
+    left: 65vw;
+    margin-top: 7%;
+}
+
+.my-img{
+    position: absolute;
+    left: 20vw;
+    top: 145vh;
+    width: 300px;
+    border-radius: 50%;
+    border: 7px double whitesmoke;
+}
+aside{
+    position: absolute;
+    text-align: justify;
+    max-width: 350px;
+    left: 60%;
+    margin-top: 15%;
+    font-size: 25px;
+}
+/*About*/
+
+
+/*Skills*/
+#section3{
+    min-height: 35vh;
+    max-height: 55vh;
+}
+.skill-container{
+    margin-top: -15%;
+    margin-left: 10%;
+}
+.skill-tag{
+    margin-top: 17%;
+    margin-left: 70%;
+       
+}
+.skill-bar {
+    border-radius: 25px;
+    position: relative;
+    top: -37px;
+    left: 65px;
+    height: 8px;
+    width: 30vw;
+    background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 4px; 
+  padding-bottom: 4px; 
+  color: white; 
+}
+
+.c {width: 50%; background-color: #04AA6D;} 
+.cpp {width: 50%; background-color: #04AA6D;} 
+.python {width: 40%; background-color: #04AA6D;} 
+.html {width: 80%; background-color: #04AA6D;} 
+.css {width: 60%; background-color: #04AA6D;} 
+.js {width: 20%; background-color: #04AA6D;} 
+
+/*Skills*/
+
+
+/*Portfolio*/
+#section4{
+    padding-top: 70px;
+    text-align: center;
+    min-height: 60vh;
+}
+.icon{
+    width: 50px;
+    aspect-ratio: 1;
+}
+.src-icon{
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.contain{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.cont{
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    aspect-ratio: 1;
+    border: 2px solid yellow;
+    
+}
+
+/*certification*/
+#cert{
+    padding: 5px;
+    aspect-ratio: 1;
+}
+
+/*Contact*/
+#contact{
+    text-align: center;
+    min-height: 50vh;
+}
+#ctc{
+    padding-bottom: 30px;
+}
+.download:hover{
+    filter: contrast();
+    box-shadow: inset 5px 5px solid red;
+    filter: hue-rotate(25deg);
+    border-bottom: #acd008 2px solid;
+    
+}
+
+.social{
+    padding-bottom: 10px;
+    display: flex;
+    padding-left: 40%;
+    padding-right: 40%;
+    justify-content: space-between;
+}
+
+#social:hover{
+    filter: contrast(2);
+    filter: hue-rotate(30deg);
+    filter: brightness(1.5);
+}
+
+.down{
+    margin-top: 5vh;
+    margin-bottom: px;
+
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    padding-top: 4px;
+    font-family: Kaushan Script;
+    background-color: #272525;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
